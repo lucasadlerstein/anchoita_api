@@ -27,6 +27,10 @@ exports.nuevoVino = async (req, res) => {
         t1125: req.body.t1125,
         t1500: req.body.t1500,
         t3000: req.body.t3000,
+        c140: req.body.c140,
+        c120: req.body.c120,
+        c70: req.body.c70,
+        c35: req.body.c35,
         stock: true,
         visible: true,
         en_nombre: req.body.en_nombre
@@ -67,6 +71,10 @@ exports.editarVino = async (req, res) => {
             t1125: req.body.t1125,
             t1500: req.body.t1500,
             t3000: req.body.t3000,
+            c140: req.body.c140,
+            c120: req.body.c120,
+            c70: req.body.c70,
+            c35: req.body.c35,
             stock: req.body.stock,
             visible: req.body.visible,
             en_nombre: req.body.en_nombre

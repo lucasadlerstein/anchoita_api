@@ -58,6 +58,22 @@ module.exports = (sequelize, Sequelize) => {
             type: Sequelize.BOOLEAN,
             allowNull: false
         },
+        c140: {
+            type: Sequelize.BOOLEAN,
+            allowNull: false
+        },
+        c120: {
+            type: Sequelize.BOOLEAN,
+            allowNull: false
+        },
+        c70: {
+            type: Sequelize.BOOLEAN,
+            allowNull: false
+        },
+        c35: {
+            type: Sequelize.BOOLEAN,
+            allowNull: false
+        },
         en_nombre: {
             type: Sequelize.STRING,
             allowNull: false
