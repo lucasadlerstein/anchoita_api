@@ -1,20 +1,16 @@
 module.exports = (sequelize, Sequelize) => {
     const Cocteleria = sequelize.define("cocteleria", {
         nombre: {
-            type: Sequelize.STRING,
-            allowNull: false
+            type: Sequelize.STRING
         },
         descripcion: {
-            type: Sequelize.TEXT,
-            allowNull: false
+            type: Sequelize.TEXT
         },
         precio: {
-            type: Sequelize.BIGINT(10),
-            allowNull: false
+            type: Sequelize.BIGINT(10)
         },
         categoria: {
-            type: Sequelize.STRING(100),
-            allowNull: false
+            type: Sequelize.STRING(100)
         },
         categoria2: {
             type: Sequelize.STRING(100)
@@ -29,12 +25,10 @@ module.exports = (sequelize, Sequelize) => {
             type: Sequelize.BIGINT(10)
         },
         en_nombre: {
-            type: Sequelize.STRING,
-            allowNull: false
+            type: Sequelize.STRING
         },
         en_descripcion: {
-            type: Sequelize.TEXT,
-            allowNull: false
+            type: Sequelize.TEXT
         },
         stock: {
             type: Sequelize.BOOLEAN,

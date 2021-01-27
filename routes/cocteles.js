@@ -5,23 +5,23 @@ const coctelesController = require('../controllers/coctelesController');
 
 // Nuevo Coctel
 router.post('/',
-    [
-        check('nombre', 'El nombre es obligatorio').not().isEmpty(),
-        check('descripcion', 'La descripcion es obligatoria').not().isEmpty(),
-        check('precio', 'El precio es obligatorio').not().isEmpty(),
-        check('categoria', 'La categoria es obligatoria').not().isEmpty(),
-    ],
+    // [
+    //     check('nombre', 'El nombre es obligatorio').not().isEmpty(),
+    //     check('descripcion', 'La descripcion es obligatoria').not().isEmpty(),
+    //     check('precio', 'El precio es obligatorio').not().isEmpty(),
+    //     check('categoria', 'La categoria es obligatoria').not().isEmpty(),
+    // ],
     coctelesController.nuevoCoctel
 );
 
 // Editar Coctel
 router.put('/editar/:id',
-    [
-        check('nombre', 'El nombre es obligatorio').not().isEmpty(),
-        check('descripcion', 'La descripcion es obligatoria').not().isEmpty(),
-        check('precio', 'El precio es obligatorio').not().isEmpty(),
-        check('categoria', 'La categoria es obligatoria').not().isEmpty(),
-    ],
+    // [
+    //     check('nombre', 'El nombre es obligatorio').not().isEmpty(),
+    //     check('descripcion', 'La descripcion es obligatoria').not().isEmpty(),
+    //     check('precio', 'El precio es obligatorio').not().isEmpty(),
+    //     check('categoria', 'La categoria es obligatoria').not().isEmpty(),
+    // ],
     coctelesController.editarCoctel
 );
 

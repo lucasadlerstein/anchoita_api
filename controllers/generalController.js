@@ -100,3 +100,13 @@ exports.estadisticasGenerales = async (req, res) => {
 
     res.send(estadisticas);
 }
+
+exports.contenidosOcultos = async (req, res) => {
+    const ocultosCocteleria = Cocteleria.findAll({where: {visible: false} });
+    const ocultosPlatos = Platos.findAll({where: {visible: false} });
+    const ocultosVinos = Vinos.findAll({where: {visible: false} });
+
+    const todo = {ocultosCocteleria, ocultosPlatos, ocultosVinos}
+
+    res.send(todo);
+}

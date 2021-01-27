@@ -5,10 +5,10 @@ const Vinos = db.vinos;
 // Crear categoria
 exports.nuevoVino = async (req, res) => {
     // Mensajes de error de express validator
-    const errores = validationResult(req);
-    if(!errores.isEmpty()){
-        return res.status(400).json({errores: errores.array()});
-    }
+    // const errores = validationResult(req);
+    // if(!errores.isEmpty()){
+    //     return res.status(400).json({errores: errores.array()});
+    // }
 
     const nuevoVino = {
         nombre: req.body.nombre,
@@ -38,7 +38,7 @@ exports.nuevoVino = async (req, res) => {
 
     await Vinos.create(nuevoVino).then(resultado => {
         return res.json({respuesta: 'creado'});
-    }) 
+    })
     .catch(error => {
         return res.status(400).json({respuesta: 'error', error});
     })
@@ -46,10 +46,10 @@ exports.nuevoVino = async (req, res) => {
 
 exports.editarVino = async (req, res) => {
     // Mensajes de error de express validator
-    const errores = validationResult(req);
-    if(!errores.isEmpty()){
-        return res.status(400).json({errores: errores.array()});
-    }
+    // const errores = validationResult(req);
+    // if(!errores.isEmpty()){
+    //     return res.status(400).json({errores: errores.array()});
+    // }
 
     if(req.params.id === null || req.params.id === undefined || req.params.id === '') {
         return res.status(400).json({respuesta: 'error', error: 'No hay ID del vino'})

@@ -1,8 +1,7 @@
 module.exports = (sequelize, Sequelize) => {
     const Vinos = sequelize.define("vinos", {
         nombre: {
-            type: Sequelize.STRING,
-            allowNull: false
+            type: Sequelize.STRING
         },
         anada: {
             type: Sequelize.BIGINT(10)
@@ -11,8 +10,7 @@ module.exports = (sequelize, Sequelize) => {
             type: Sequelize.TEXT
         },
         precio: {
-            type: Sequelize.BIGINT(10),
-            allowNull: false
+            type: Sequelize.BIGINT(10)
         },
         vinedo: {
             type: Sequelize.STRING
@@ -27,8 +25,7 @@ module.exports = (sequelize, Sequelize) => {
             type: Sequelize.STRING
         },
         uva: {
-            type: Sequelize.STRING,
-            allowNull: false
+            type: Sequelize.STRING
         },
         copa: {
             type: Sequelize.BOOLEAN,
@@ -75,16 +72,13 @@ module.exports = (sequelize, Sequelize) => {
             allowNull: false
         },
         en_nombre: {
-            type: Sequelize.STRING,
-            allowNull: false
+            type: Sequelize.STRING
         },
         stock: {
-            type: Sequelize.BOOLEAN,
-            allowNull: false
+            type: Sequelize.BOOLEAN
         },
         visible: {
-            type: Sequelize.BOOLEAN,
-            allowNull: false
+            type: Sequelize.BOOLEAN
         }
     });
 
