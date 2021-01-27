@@ -102,9 +102,9 @@ exports.estadisticasGenerales = async (req, res) => {
 }
 
 exports.contenidosOcultos = async (req, res) => {
-    const ocultosCocteleria = Cocteleria.findAll({where: {visible: false} });
-    const ocultosPlatos = Platos.findAll({where: {visible: false} });
-    const ocultosVinos = Vinos.findAll({where: {visible: false} });
+    const ocultosCocteleria = await Cocteleria.findAll({where: {visible: false} });
+    const ocultosPlatos = await Platos.findAll({where: {visible: false} });
+    const ocultosVinos = await Vinos.findAll({where: {visible: false} });
 
     const todo = {ocultosCocteleria, ocultosPlatos, ocultosVinos}
 
