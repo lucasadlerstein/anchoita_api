@@ -17,4 +17,8 @@ router.get('/estadisticas',
     generalController.estadisticasGenerales
 )
 
+router.get('/ocultos/totales',
+    generalController.contenidosOcultos
+)
+
 module.exports = router;
