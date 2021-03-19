@@ -24,7 +24,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Puerto de la app
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 443;
 
 // Rutas
 app.use('/api/cocteles', require('./routes/cocteles'));
